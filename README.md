@@ -6,8 +6,8 @@ It's built on STM's HAL and intends to offer an easy and fast way to use 5110 us
 It's also based on two other 5110 libraries:
   1) Tilen Majerle's  
      @website	http://stm32f4-discovery.com  
- 	   @link	http://stm32f4-discovery.com/pcd8544-nokia-33105110-lcd-stm32f429-discovery-library/
-  	 This library was built for STM devices but it doesn't run on HAL.
+ 	   @link	http://stm32f4-discovery.com/pcd8544-nokia-33105110-lcd-stm32f429-discovery-library/  
+  	 This library was built for STM devices but it doesn't run on HAL.  
   	 Tilen also has a great site about STM32.
  
   2) RinkyDinkElectronics'
