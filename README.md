@@ -1,8 +1,8 @@
 # Nokia-LCD5110-HAL
 
 
-This library is used to control Nokia's 5110 LCD's on STM32 devices.
-It's built on STM's HAL and intends to offer an easy and fast way to use 5110 using HAL's GPIOs.
+This library is used to control Nokia's 5110 LCD on STM32 devices.
+It was built on STM's HAL and intends to offer an easy and fast way to use 5110 using HAL's GPIOs.
 It's also based on two other 5110 libraries:
   1) Tilen Majerle's  
      @website	http://stm32f4-discovery.com  
