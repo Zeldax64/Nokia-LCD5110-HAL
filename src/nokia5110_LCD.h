@@ -40,10 +40,7 @@
  * Now the display is initialized and ready to use.
  *
  * Example:
- * 4) Call, for example, LCD_print("Hello World", 0, 0) and then call LCD_refreshScr() to update the screen.
- *
- * Remember: all functions modify a buffer variable in a struct (LCD_att). You must update the screen
- * 			 using LCD_refreshScr() or LCD_refreshArea() in order to send data to the screen.
+ * 4) Call LCD_print("Hello World", 0, 0)
  *
  * --------------------
  * Author: Caio Rodrigo
@@ -56,7 +53,7 @@
 
 #include <stdbool.h>
 #include "font.h"
-#include "gpio.h"
+#include "stm32f4xx_hal.h"
 
 #define LCD_COMMAND 0
 #define LCD_DATA 1
@@ -109,6 +106,7 @@ void LCD_setCLK(GPIO_TypeDef* PORT, uint16_t PIN);
 
 /*----- Library Functions -----*/
 void LCD_send(uint8_t val);
+void LCD_write(uint8_t data, uint8_t mode);
 void LCD_init();
 void LCD_invert(bool mode);
 void LCD_invertText(bool mode);
@@ -116,6 +114,12 @@ void LCD_putChar(char c);
 void LCD_print(char *str, uint8_t x, uint8_t y);
 void LCD_clrScr();
 void LCD_goXY(uint8_t x, uint8_t y);
+
+/*----- Draw Functions -----*/
+/*
+ * These functions draw in a buffer variable. It's necessary to use LCD_refreshScr() or LCD_refreshArea()
+ * in order to send data to the LCD.
+ */
 void LCD_refreshScr();
 void LCD_refreshArea(uint8_t xmin, uint8_t ymin, uint8_t xmax, uint8_t ymax);
 void LCD_setPixel(uint8_t x, uint8_t y, bool pixel);
