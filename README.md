@@ -41,7 +41,7 @@ Steps to use this library:
   Now the display is initialized and ready to use.  
  
   Example:  
-  4) Call LCD_print("Hello World", 0, 0)  
+    4) Call LCD_print("Hello World", 0, 0)  
 
 ## Motivation
 In 2016 I wanted to use a Nokia's 5110 LCD in a project in college but I hadn't found any library which uses HAL. Then I decided to port my own library to HAL. I based my project on two already existent libraries: Tilen Majerle's library for STM32 and RinkyDinkElectronics' library for Arduino. I finished my project and this library stayed here in my computer since then.  
