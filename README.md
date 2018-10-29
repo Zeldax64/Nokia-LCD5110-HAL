@@ -29,7 +29,7 @@ This library was built on HAL for STM32 devices, so HAL is necessary. It's recom
 with STM32CubeMX.
  
 Steps to use this library:  
-  1) Import this library into your code (!)  
+  1) Import this library into your code 
   2) Configure your pins using set function:  
   LCD_setRST(PORT, PIN)  
   LCD_setCE(PORT, PIN)  
@@ -42,11 +42,6 @@ Steps to use this library:
  
   Example:  
     4) Call LCD_print("Hello World", 0, 0)  
-
-## Motivation
-In 2016 I wanted to use a Nokia's 5110 LCD in a project in college but I hadn't found any library which uses HAL. Then I decided to port my own library to HAL. I based my project on two already existent libraries: Tilen Majerle's library for STM32 and RinkyDinkElectronics' library for Arduino. I finished my project and this library stayed here in my computer since then.  
-Now I decide to share it because I think this might be useful to someone :D  
-
 --------------------
 Author: Caio Rodrigo  
 Github: https://github.com/Zeldax64?tab=repositories
