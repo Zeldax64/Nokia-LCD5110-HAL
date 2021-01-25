@@ -294,7 +294,7 @@ void LCD_drawLine(int x1, int y1, int x2, int y2){
       y1=y2;
       y2=tmp;
     }
-    LCD_drawHLine(x1, y1, y2-y1);
+    LCD_drawVLine(x1, y1, y2-y1);
   }
   else if (abs(x2-x1)>abs(y2-y1)){
     delta=((double)(y2-y1)/(double)(x2-x1));
