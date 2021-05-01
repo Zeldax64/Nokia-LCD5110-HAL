@@ -26,18 +26,22 @@ Steps to use this library:
   
   2) Import this library into your generated project.
   
-  2) Configure your pins using the library set functions:  
+  3) Copy nokia5110_conf_template.h to nokia5110_conf.h to a project directory (I suggest Core/Inc. This is where the hal configuration is stored as well)
+  
+  4) In nokia5110_conf.h uncomment your microcontroller family. Make sure all other families are commented out
+  
+  5) Configure your pins using the library set functions:  
   LCD_setRST(PORT, PIN)  
   LCD_setCE(PORT, PIN)  
   LCD_setDC(PORT, PIN)  
   LCD_setDIN(PORT, PIN)  
   LCD_setCLK(PORT, PIN)  
   
-  3) Call LCD_init() to initialize the LCD  
+  6) Call LCD_init() to initialize the LCD  
   Now the display is initialized and ready to use.  
  
   Example:  
-  4) Call: LCD_print("Hello World", 0, 0).
+  7) Call: LCD_print("Hello World", 0, 0).
 
 --------------------
 Author: Caio Rodrigo  
